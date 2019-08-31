@@ -19,13 +19,13 @@ body {
     background-color: #FFF;
     max-width: 768px;
     display: inline-block;
-    margin: 112px 16px 16px;
+    margin: 112px 8px 16px;
     padding: 16px;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 480px) and (min-height: 480px) {
     .box {
-        margin-top: 16vh;
+        margin: 16vh 16px 16px;
     }
 }
 
@@ -67,16 +67,22 @@ body {
 }
 
 .social-links a {
-    margin: 0 2px;
+    margin: 0 4px;
 }
 
-@media (min-width: 380px) {
+@media (min-width: 360px) {
     .social-links a {
         margin: 0 8px;
     }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 380px) {
+    .social-links a {
+        margin: 0 10px;
+    }
+}
+
+@media (min-width: 440px) {
     .social-links a {
         margin: 0 16px;
     }
