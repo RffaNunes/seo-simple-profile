@@ -1,0 +1,18 @@
+html,
+body {
+    background-color: #000;
+    background: #000 url(../img/layout/bg-home.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%
+}
+
+#gridBackground {
+    background-image: url(../img/layout/bg-grid-gray.png); */
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+}
