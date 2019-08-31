@@ -1,18 +1,4 @@
-$(document).ready(function () {
-    function alterarCorDaGrade(obj, args) {
-        var bgGrid = [];
-        var bgGridColor = Math.round(5 * Math.random());
-        var bgGridUrl = location.protocol + "//" + location.host + "/";
-        if (location.hostname == "localhost") {
-            bgGridUrl += location.pathname.split('/')[1] + "/";
-        }
-        bgGrid[0] = "bg-grid-gray.png";
-        bgGrid[1] = "bg-grid-red.png";
-        bgGrid[2] = "bg-grid-orange.png";
-        bgGrid[3] = "bg-grid-green.png";
-        bgGrid[4] = "bg-grid-blue.png";
-        bgGrid[5] = "bg-grid-violet.png";
-        $("#gridBackground").css('background-image', "url(" + bgGridUrl + "img/layout/" + bgGrid[bgGridColor] + ")");
-    }
-    alterarCorDaGrade();
-});
+window.onload = function () {
+    var bgcolorlist = new Array("#ef5350", "#ec407a", "#42a5f5", "#29b6f6", "#26c6da", "#26a69a", "#66bb6a", "#9ccc65", "#d4e157", "#ffee58", "#ffca28", "#ffa726", "#ff7043", "#bdbdbd")
+    document.body.style.background = bgcolorlist[Math.floor(Math.random() * bgcolorlist.length)]
+}
