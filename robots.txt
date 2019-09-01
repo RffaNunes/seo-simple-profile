@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.rafaweb.com.br/sitemap.xml
+Sitemap: https://rafaweb.com.br/sitemap.xml
