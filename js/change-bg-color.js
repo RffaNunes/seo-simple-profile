@@ -1,4 +1,4 @@
 window.onload = function () {
-    var bgcolor = new Array("#ef5350", "#ec407a", "#42a5f5", "#29b6f6", "#26c6da", "#26a69a", "#66bb6a", "#9ccc65", "#d4e157", "#ffee58", "#ffca28", "#ffa726", "#ff7043", "#bdbdbd")
+    var bgcolor = new Array("#ffcdd2", "#F8BBD0", "#E1BEE7", "#D1C4E9", "#C5CAE9", "#BBDEFB", "#B3E5FC", "#B2EBF2", "#B2DFDB", "#C8E6C9", "#DCEDC8", "#F0F4C3", "#FFF9C4", "#FFECB3", "#FFE0B2", "#FFCCBC", "#D7CCC8", "#F5F5F5", "#CFD8DC")
     document.body.style.background = bgcolor[Math.floor(Math.random() * bgcolor.length)]
 }

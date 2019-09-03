@@ -9,6 +9,8 @@ body {
     line-height: 24px;
 }
 
+$size-media: 650px;
+
 .p-color-gray {
     color: #757575;
 }
@@ -20,32 +22,63 @@ body {
     background-color: #FFF;
     max-width: 768px;
     display: inline-block;
-    margin: 112px 8px 16px;
+    margin: 56px 8px 16px;
     padding: 16px;
 
-    @media (min-width: 480px) and (min-height: 480px) {
+    @media (min-width: $size-media) and (min-height: $size-media) {
         margin: 16vh 16px 16px;
     }
 }
 
-.img-profile {
-    border-radius: 100px;
-    margin-top: -112px;
-}
+.box-header-profile {
+    text-align: left;
+    display: table;
+    margin-top: -56px;
 
-.text-title  {
-    line-height: 28px;
-
-    .tt-name {
-        font-weight: bold;
-        font-size: 24px;
-        display: block;
-        margin-top: 16px;
+    @media (min-width: $size-media) and (min-height: $size-media) {
+        margin-top: -96px;
     }
 
-    .tt-sub {
-        font-weight: normal;
-        font-size: 18px;
+    .bhp-img {
+        border-radius: 100px;
+        width: 80px;
+        display: table-cell;
+
+        @media (min-width: $size-media) and (min-height: $size-media) {
+            width: 160px;
+        }
+    }
+
+    .bhp-title  {
+        vertical-align: middle;
+        line-height: 40px;
+        display: table-cell;
+        padding-left: 16px;
+
+        @media (min-width: $size-media) and (min-height: $size-media) {
+            vertical-align: top;
+            line-height: normal;
+            padding: 8px 0 0 33px;
+        }
+        
+        .bhp-title-name {
+            font-weight: bold;
+            font-size: 20px;
+            display: block;
+
+            @media (min-width: $size-media) and (min-height: $size-media) {
+                font-size: 30px;
+            }
+        }
+
+        .bhp-title-sub {
+            font-weight: normal;
+            font-size: 14px;
+
+            @media (min-width: $size-media) and (min-height: $size-media) {
+                font-size: 22px;
+            }
+        }
     }
 }
 
@@ -64,6 +97,11 @@ body {
 
 .social-links {
     margin: 32px 0 8px;
+
+    @media (min-width: $size-media) and (min-height: $size-media) {
+        text-align: left;
+        margin: -52px 0 0 192px;
+    }
 
     a {
         margin: 0 4px;
