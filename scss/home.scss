@@ -15,6 +15,40 @@ $size-media: 650px;
     color: #757575;
 }
 
+.icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+
+    &.icon-linkedin {
+        background-image: url(/img/icon-linkedin.svg);
+    }
+
+    &.icon-instagram {
+        background-image: url(/img/icon-instagram.svg);
+    }
+
+    &.icon-facebook {
+        background-image: url(/img/icon-facebook.svg);
+    }
+
+    &.icon-twitter {
+        background-image: url(/img/icon-twitter.svg);
+        width: 40px;
+    }
+
+    &.icon-github {
+        background-image: url(/img/icon-github.svg);
+    }
+
+    &.icon-email {
+        background-image: url(/img/icon-email.svg);
+        width: 40px;
+    }
+}
+
 .box {
     border-radius: 2px;
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.12), 0 0 1px rgba(0, 0, 0, 0.16);
@@ -85,7 +119,7 @@ $size-media: 650px;
 .text-dexcription {
     text-align: left;
     white-space: pre-line;
-    margin: 32px 0;
+    margin: 56px 0 32px;
 }
 
 .text-attention {
