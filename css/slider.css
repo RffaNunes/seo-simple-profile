@@ -1,0 +1,147 @@
+@-webkit-keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+.slider, div#slider {
+  overflow: hidden;
+}
+
+.slider .slider-wrapper, .slider figure, div#slider .slider-wrapper, div#slider figure {
+  width: 1000%;
+  position: relative;
+  -webkit-animation: 60s slidy infinite;
+  animation: 60s slidy infinite;
+}
+
+.slider .slider-wrapper .sw-content, .slider figure .sw-content, div#slider .slider-wrapper .sw-content, div#slider figure .sw-content {
+  width: 10%;
+  float: left;
+}
+
+.slider {
+  margin: 48px 8px;
+}
+
+@media (min-width: 650px) and (min-height: 650px) {
+  .slider {
+    margin: 48px 16px;
+  }
+}
+
+.slider .slider-wrapper .sw-content {
+  display: table;
+}
+
+.slider .slider-wrapper .sw-content .swc-profile {
+  text-align: left;
+  vertical-align: middle;
+  display: table-row;
+}
+
+@media (min-width: 650px) and (min-height: 650px) {
+  .slider .slider-wrapper .sw-content .swc-profile {
+    text-align: center;
+    display: table-cell;
+    width: 168px;
+  }
+}
+
+.slider .slider-wrapper .sw-content .swc-profile .swc-profile-img {
+  border-radius: 100%;
+  width: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 16px 16px 0;
+}
+
+@media (min-width: 650px) and (min-height: 650px) {
+  .slider .slider-wrapper .sw-content .swc-profile .swc-profile-img {
+    width: 128px;
+    margin: 0;
+  }
+}
+
+.slider .slider-wrapper .sw-content .swc-profile .swc-profile-title {
+  vertical-align: sub;
+  display: inline-block;
+}
+
+.slider .slider-wrapper .sw-content .swc-profile .swc-profile-title b {
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+  margin: 8px 0 -4px;
+}
+
+.slider .slider-wrapper .sw-content .swc-profile .swc-profile-title small {
+  font-size: 14px;
+}
+
+.slider .slider-wrapper .sw-content .swc-text {
+  font-size: 16px;
+  text-align: left;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+@media (min-width: 650px) and (min-height: 650px) {
+  .slider .slider-wrapper .sw-content .swc-text {
+    padding: 0 16px 0 8px;
+  }
+}

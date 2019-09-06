@@ -1,0 +1,107 @@
+@-webkit-keyframes slidy {
+    0%      { left: 0%; }
+    20%     { left: 0%; }
+    25%     { left: -100%; }
+    45%     { left: -100%; }
+    50%     { left: -200%; }
+    70%     { left: -200%; }
+    75%     { left: -300%; }
+    95%     { left: -300%; }
+    100%    { left: -400%; }
+}
+
+@keyframes slidy {
+    0%      { left: 0%; }
+    20%     { left: 0%; }
+    25%     { left: -100%; }
+    45%     { left: -100%; }
+    50%     { left: -200%; }
+    70%     { left: -200%; }
+    75%     { left: -300%; }
+    95%     { left: -300%; }
+    100%    { left: -400%; }
+}
+
+$size-media: 650px;
+
+.slider, div#slider {
+    overflow: hidden;
+
+    .slider-wrapper, figure {
+        width: 1000%;
+        position: relative;
+        -webkit-animation: 60s slidy infinite;
+                animation: 60s slidy infinite;
+        
+        .sw-content {
+            width: 10%;
+            float: left;
+        }
+    }
+}
+
+.slider {
+    margin: 48px 8px;
+
+    @media (min-width: $size-media) and (min-height: $size-media) {
+        margin: 48px 16px;
+    }
+    
+    .slider-wrapper {
+        .sw-content {
+            display: table;
+
+            .swc-profile {
+                text-align: left;
+                vertical-align: middle;
+                display: table-row;
+
+                @media (min-width: $size-media) and (min-height: $size-media) {
+                    text-align: center;
+                    display: table-cell;
+                    width: 168px;
+                }
+
+                .swc-profile-img {
+                    border-radius: 100%;
+                    width: 80px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin: 0 16px 16px 0;
+
+                    @media (min-width: $size-media) and (min-height: $size-media) {
+                        width: 128px;
+                        margin: 0;
+                    }
+                }
+
+                .swc-profile-title {
+                    vertical-align: sub;
+                    display: inline-block;
+
+                    b {
+                        font-weight: bold;
+                        font-size: 16px;
+                        display: block;
+                        margin: 8px 0 -4px;
+                    }
+                    
+                    small {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .swc-text {
+                font-size: 16px;
+                text-align: left;
+                vertical-align: middle;
+                display: table-cell;
+
+                @media (min-width: $size-media) and (min-height: $size-media) {
+                    padding: 0 16px 0 8px;
+                }
+            }
+        }
+    }
+}
