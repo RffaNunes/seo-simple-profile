@@ -63,7 +63,7 @@ $size-media: 650px;
     padding: 16px;
 
     @media (min-width: $size-media) and (min-height: $size-media) {
-        margin: 16vh 16px 16px;
+        margin: 20vh 16px 16px;
     }
 }
 
@@ -121,7 +121,11 @@ $size-media: 650px;
 
 .text-dexcription {
     text-align: left;
-    margin: 56px 0 32px;
+    margin: 32px 0;
+
+    @media (min-width: $size-media) and (min-height: $size-media) {
+        margin-top: 56px;
+    }
 }
 
 .text-attention {

@@ -62,7 +62,7 @@ body {
 
 @media (min-width: 650px) and (min-height: 650px) {
   .box {
-    margin: 16vh 16px 16px;
+    margin: 20vh 16px 16px;
   }
 }
 
@@ -130,7 +130,13 @@ body {
 
 .text-dexcription {
   text-align: left;
-  margin: 56px 0 32px;
+  margin: 32px 0;
+}
+
+@media (min-width: 650px) and (min-height: 650px) {
+  .text-dexcription {
+    margin-top: 56px;
+  }
 }
 
 .text-attention {

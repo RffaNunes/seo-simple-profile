@@ -2,29 +2,58 @@
   0% {
     left: 0%;
   }
-  20% {
+  /* 1 */
+  10% {
     left: 0%;
   }
-  25% {
+  12% {
     left: -100%;
   }
-  45% {
+  /* 2 */
+  22% {
     left: -100%;
   }
-  50% {
+  24% {
     left: -200%;
   }
-  70% {
+  /* 3 */
+  34% {
     left: -200%;
   }
-  75% {
+  36% {
     left: -300%;
   }
-  95% {
+  /* 4 */
+  46% {
     left: -300%;
   }
-  100% {
+  48% {
     left: -400%;
+  }
+  /* 5 */
+  58% {
+    left: -400%;
+  }
+  60% {
+    left: -500%;
+  }
+  /* 6 */
+  70% {
+    left: -500%;
+  }
+  72% {
+    left: -600%;
+  }
+  /* 7 */
+  82% {
+    left: -600%;
+  }
+  84% {
+    left: -700%;
+  }
+  /* 8 */
+  100% {
+    left: -700%;
   }
 }
 
@@ -32,29 +61,58 @@
   0% {
     left: 0%;
   }
-  20% {
+  /* 1 */
+  10% {
     left: 0%;
   }
-  25% {
+  12% {
     left: -100%;
   }
-  45% {
+  /* 2 */
+  22% {
     left: -100%;
   }
-  50% {
+  24% {
     left: -200%;
   }
-  70% {
+  /* 3 */
+  34% {
     left: -200%;
   }
-  75% {
+  36% {
     left: -300%;
   }
-  95% {
+  /* 4 */
+  46% {
     left: -300%;
   }
-  100% {
+  48% {
     left: -400%;
+  }
+  /* 5 */
+  58% {
+    left: -400%;
+  }
+  60% {
+    left: -500%;
+  }
+  /* 6 */
+  70% {
+    left: -500%;
+  }
+  72% {
+    left: -600%;
+  }
+  /* 7 */
+  82% {
+    left: -600%;
+  }
+  84% {
+    left: -700%;
+  }
+  /* 8 */
+  100% {
+    left: -700%;
   }
 }
 
@@ -65,8 +123,8 @@
 .slider .slider-wrapper, .slider figure, div#slider .slider-wrapper, div#slider figure {
   width: 1000%;
   position: relative;
-  -webkit-animation: 60s slidy infinite;
-  animation: 60s slidy infinite;
+  -webkit-animation: 140s slidy infinite;
+  animation: 140s slidy infinite;
 }
 
 .slider .slider-wrapper .sw-content, .slider figure .sw-content, div#slider .slider-wrapper .sw-content, div#slider figure .sw-content {
@@ -75,12 +133,12 @@
 }
 
 .slider {
-  margin: 48px 8px;
+  margin: 48px 16px;
 }
 
 @media (min-width: 650px) and (min-height: 650px) {
   .slider {
-    margin: 48px 16px;
+    margin: 48px 40px;
   }
 }
 
@@ -112,7 +170,7 @@
 
 @media (min-width: 650px) and (min-height: 650px) {
   .slider .slider-wrapper .sw-content .swc-profile .swc-profile-img {
-    width: 128px;
+    width: 104px;
     margin: 0;
   }
 }
@@ -135,6 +193,7 @@
 
 .slider .slider-wrapper .sw-content .swc-text {
   font-size: 16px;
+  line-height: initial;
   text-align: left;
   vertical-align: middle;
   display: table-cell;
