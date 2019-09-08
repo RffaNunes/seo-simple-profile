@@ -60,6 +60,16 @@ $size-media: 650px;
     @media (min-width: $size-media) and (min-height: $size-media) {
         margin: 48px 40px;
     }
+
+    .slider-title {
+        text-align: left;
+        font-weight: bold;
+        margin-bottom: 16px;
+
+        @media (min-width: $size-media) and (min-height: $size-media) {
+            margin-left: 16px;
+        }
+    }
     
     .slider-wrapper {
         .sw-content {
