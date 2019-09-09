@@ -13,6 +13,10 @@ $size-media: 650px;
 
 .p-color-gray {
     color: #757575;
+    
+    @media (min-width: $size-media) and (min-height: $size-media) {
+        color: #424242;
+    }
 }
 
 .icon {
