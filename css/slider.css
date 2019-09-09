@@ -121,14 +121,14 @@
 }
 
 .slider .slider-wrapper, .slider figure, div#slider .slider-wrapper, div#slider figure {
-  width: 1000%;
+  width: 800%;
   position: relative;
-  -webkit-animation: 140s slidy infinite;
-  animation: 140s slidy infinite;
+  -webkit-animation: 144s slidy infinite;
+  animation: 144s slidy infinite;
 }
 
 .slider .slider-wrapper .sw-content, .slider figure .sw-content, div#slider .slider-wrapper .sw-content, div#slider figure .sw-content {
-  width: 10%;
+  width: 12.5%;
   float: left;
 }
 

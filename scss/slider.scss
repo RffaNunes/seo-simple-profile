@@ -38,17 +38,23 @@
 
 $size-media: 650px;
 
+$slider: 8;
+$slider-time: 18s;
+
+$slider-width: $slider*100%;
+$slider-frame: 100%/$slider;
+
 .slider, div#slider {
     overflow: hidden;
 
     .slider-wrapper, figure {
-        width: 1000%;
+        width: $slider-width;
         position: relative;
-        -webkit-animation: 140s slidy infinite;
-                animation: 140s slidy infinite;
+        -webkit-animation: $slider*$slider-time slidy infinite;
+                animation: $slider*$slider-time slidy infinite;
         
         .sw-content {
-            width: 10%;
+            width: $slider-frame;
             float: left;
         }
     }
