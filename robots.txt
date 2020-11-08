@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /404.html
 
-Sitemap: https://rafaweb.com.br/sitemap.xml
+Sitemap: https://rafanunes.com/sitemap.xml
